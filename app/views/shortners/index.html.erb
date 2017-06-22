@@ -15,7 +15,7 @@
     <% @shortners.each do |shortner| %>
       <tr>
         <td><%= shortner.longurl %></td>
-        <td><%= shortner.shorturl %></td>
+        <td><%= link_to shortner.shorturl, shortner.longurl %></td>
         <td><%= link_to 'Show', shortner %></td>
         <td><%= link_to 'Edit', edit_shortner_path(shortner) %></td>
         <td><%= link_to 'Destroy', shortner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
