@@ -1,0 +1,3 @@
+class Shortner < ApplicationRecord
+
+end
